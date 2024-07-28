@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import cafeBackgroundImage from "../assets/images/bg-cafe-1.jpg";
 import ajPanwitImage from "../assets/images/aj-panwit.jpg";
 import coffeeImage from "../assets/images/coffee-1.jpg";
+import uyuyouImage from "../assets/images/uyuyou.jpg";
 
 export default function HomePage() {
   return (
@@ -31,17 +32,13 @@ export default function HomePage() {
             <img src={ajPanwitImage} alt="Panwit Tuwanut" className="h-full w-full object-cover" />
           </div>
         </div>
-        <p className="text-right mt-8">
-          ปัจจุบันค่าเฟ่ และห้องสมุดของเรา อยู่ในช่วงการดูแลของ ....
+        <div className="flex gap-4"><img src={uyuyouImage} className="h-1/4 w-1/4" /><p className="text-left mt-8">
+          ปัจจุบันคาเฟ่และห้องสมุดของเราอยู่ในช่วงการดูแลของ นางสาวภัณฑิรา ปิ่นกิ่งทอง รหัสนักศึกษา : 65070168{" "}
           {/* TODO: ชื่อของตนเอง, รหัสประจำตัวนักศึกษา และแนะนำคาเฟ่นี้ต่ออีกสักหน่อย + ใส่รูปของตนเอง (ไม่จำเป็นหากไม่สะดวกใจใส่รูป) */}
-          ซึ่งมีบริการ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          placeat sit ea sapiente officia sunt cumque impedit, reiciendis quis eius asperiores!
-          Minus, mollitia? Vitae inventore odio quod ducimus similique, expedita sequi, reiciendis
-          rem recusandae impedit voluptatibus quo veritatis ut quis et suscipit? Eligendi, neque!
-          Earum quaerat unde similique totam. Pariatur!
-        </p>
+          ซึ่งมีบริการเครื่องดื่ม และอาหารที่มากมายให้คุณได้เลือก แถมมีพนักงานต้อนรับเป็นสุนัข 1 ตัวชื่อว่าป๊อกกี้ คาเฟ่ของเราสามารถมานั่งชิวๆ ปล่อยใจจอยๆ
+          หรือจะนำโน๊ตบุค ไอแพด หรืออะไรก็แล้วแต่มานั่งทำงานได้ แต่ไม่ทำ
+        </p></div>
       </section>
-
       <section className="w-full flex justify-center">
         <img src={coffeeImage} alt="Coffee" className="w-full" />
       </section>
